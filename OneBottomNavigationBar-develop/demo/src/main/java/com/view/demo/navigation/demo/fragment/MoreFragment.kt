@@ -65,7 +65,7 @@ class MoreFragment : BaseFragment() {
         demoCollectionAdapter = WalletAdapter(this)
         viewPager = view.findViewById(R.id.view_pager2)
         viewPager.adapter = demoCollectionAdapter
-
+        tab_layout.setTabTextColors(Color.parseColor("#7B7B7B"), Color.parseColor("#000000"))
         TabLayoutMediator(tab_layout, viewPager) { tab, position ->
             tab.text = when (position) {
                 0 -> "容幣紀錄"
