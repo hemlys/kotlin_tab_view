@@ -4,12 +4,20 @@ import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.view.*
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
-import com.view.bottomview.demo.R
-import com.view.demo.navigation.demo.adapter.WalletAdapter
 import com.bumptech.glide.Glide
 import com.google.android.material.tabs.TabLayoutMediator
+import com.sample.demo.myapplication.bean.UsersList
+import com.sample.demo.myapplication.net.InfoViewModel
+import com.view.bottomview.demo.R
+import com.view.demo.navigation.demo.adapter.UsersListAdapter
+import com.view.demo.navigation.demo.adapter.WalletAdapter
+import com.view.demo.navigation.ui.ProgressbarFragment
+import io.reactivex.Observer
+import kotlinx.android.synthetic.main.fragment_list.*
 import kotlinx.android.synthetic.main.fragment_more.*
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 /**
@@ -68,6 +76,10 @@ class MoreFragment : BaseFragment() {
         }.attach()
 
 
+
+
     }
+
+
 
 }

@@ -31,7 +31,6 @@ class UsersListAdapter(val partItemList: List<String>, val clickListener: (Strin
                 .load("https://event.12cm.com.tw/starbucks/img/siren-l.png")
                 .centerCrop()
                 .into(itemView.icon);
-//            itemView.login_text_view.text = part.login
             itemView.setOnClickListener { clickListener(part) }
         }
     }

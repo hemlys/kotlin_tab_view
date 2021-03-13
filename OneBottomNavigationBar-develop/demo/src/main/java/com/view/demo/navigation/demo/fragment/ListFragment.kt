@@ -6,10 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.sample.demo.myapplication.bean.UsersList
+import com.sample.demo.myapplication.net.InfoViewModel
 
 import com.view.bottomview.demo.R
 import com.view.demo.navigation.demo.adapter.UsersListAdapter
+import com.view.demo.navigation.ui.ProgressbarFragment
+import io.reactivex.Observer
 import kotlinx.android.synthetic.main.fragment_list.*
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 /**
  * @author onestravel
@@ -18,7 +23,7 @@ import kotlinx.android.synthetic.main.fragment_list.*
  */
 class ListFragment : BaseFragment() {
     private lateinit var list : RecyclerView
-
+    private val infoViewModel: InfoViewModel by viewModel()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -41,9 +46,11 @@ class ListFragment : BaseFragment() {
         list = rv_animal_list
         list.layoutManager = LinearLayoutManager(activity)
         list.adapter = UsersListAdapter(arrayList) { partItem: String -> partItemClicked(partItem) }
+
+
     }
 
-    private fun partItemClicked(partItem : String) {
+    private fun partItemClicked(partItem: String) {
 
     }
 }
