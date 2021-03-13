@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BottomView</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting">设置</string>
+    <string name="photo">拍照</string>
+    <string name="home">首页</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">EXPLORE</string>
+    <string name="title_notifications">WALLET</string>
+    <string name="title_phone">PHOME</string>
+    <string name="title_caht">CHAT</string>
+</resources>

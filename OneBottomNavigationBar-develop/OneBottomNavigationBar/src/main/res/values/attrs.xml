@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="icon" format="reference"></attr>
+    <attr name="title" format="string"></attr>
+    <attr name="floating" format="boolean"></attr>
+    <attr name="showFragment" format="boolean"></attr>
+    <declare-styleable name="One_StyleBottomLayout">
+        <attr name="oneItemPadding" format="dimension"></attr>
+        <attr name="oneItemIconTint" format="color|reference"></attr>
+        <attr name="oneItemIconWidth" format="dimension"></attr>
+        <attr name="oneItemIconHeight" format="dimension"></attr>
+        <attr name="oneItemTextColor" format="color|reference"></attr>
+        <attr name="oneItemTopLineColor" format="color|reference"></attr>
+        <attr name="oneItemTextSize" format="dimension"></attr>
+        <attr name="oneItemTextTopMargin" format="dimension"></attr>
+        <attr name="oneFloatingEnable" format="boolean"></attr>
+        <attr name="oneFloatingPadding" format="dimension"></attr>
+        <attr name="oneFloatingUp" format="dimension"></attr>
+        <attr name="oneMenu" format="reference"></attr>
+    </declare-styleable>
+
+</resources>
